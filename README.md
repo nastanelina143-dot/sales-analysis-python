@@ -1,28 +1,27 @@
-Sales Analysis of an International Company (2010–2017)
+# Sales Analysis of an International Company
 
-Exploratory data analysis of 1,330 sales orders across 45 countries and 12 product categories.
+## Task
 
-Questions
-Which product categories, countries and regions bring the most revenue and profit?
-How do online and offline sales channels compare?
-How long does shipping take, and does it affect profit?
-How do sales change over time, by weekday and by quarter?
-Do high-priority orders ship faster? How concentrated is revenue across countries?
-Tools
+Analyze sales data of an international company (2010–2017) to find out which product categories, countries, regions and sales channels bring the most revenue and profit, how fast orders are shipped and how sales change over time.
 
-Python · Pandas · NumPy · Matplotlib · Seaborn · Google Colab
+## What the analysis does
 
-Steps
-Data overview and cleaning (missing values, data types, duplicates, anomalies)
-Merging three tables (orders, countries, products)
-Key metrics: revenue, cost, profit, margin
-Analysis by category, country, region and sales channel
-Shipping time analysis
-Sales dynamics, weekdays and seasonality
-Additional analysis: order priority, channel mix, Pareto analysis, average order value
-Key findings
-The company is profitable: about 30% of revenue stays as profit.
-Europe brings about 94% of revenue; Asia only 5–7%.
-Cosmetics brings the most profit; Meat and Office Supplies have the lowest margins.
-Online and offline channels are almost equal in revenue and profit.
-Shipping time (median ~25 days) has practically no relationship with profit (r ≈ 0.06).
+- Cleans the data: handles missing values, converts dates, fixes inconsistent categories and checks for anomalies
+- Merges three tables (orders, countries, products) into one dataset
+- Calculates key metrics: revenue, cost, profit and margin
+- Compares results by product category, country, region and sales channel
+- Analyzes shipping time and its relationship with profit
+- Shows sales dynamics by year, weekday and quarter
+- Answers additional questions: order priority vs shipping time, online vs offline share by category, revenue concentration by country (Pareto analysis) and average order value
+
+## Python techniques used
+
+Pandas (`merge`, `groupby`, `agg`, `pivot_table`, `melt`), datetime conversion, missing values handling, correlation analysis, data visualization with Matplotlib and Seaborn (bar charts, boxplots, heatmaps, line charts, scatter plots, Pareto chart)
+
+## Key findings
+
+- The company is profitable: about 30% of revenue stays as profit
+- Europe brings about 94% of revenue, Asia only 5–7%
+- Cosmetics brings the most profit, while Meat and Office Supplies have the lowest margins
+- Online and offline channels are almost equal in revenue and profit
+- Shipping time has practically no relationship with profit (correlation ≈ 0.06)
