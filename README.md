@@ -12,11 +12,10 @@ Analyze sales data of an international company (2010–2017) to find out which p
 - Compares results by product category, country, region and sales channel
 - Analyzes shipping time and its relationship with profit
 - Shows sales dynamics by year, weekday and quarter
-- Answers additional questions: order priority vs shipping time, online vs offline share by category, revenue concentration by country (Pareto analysis) and average order value
 
 ## Python techniques used
 
-Pandas (`merge`, `groupby`, `agg`, `pivot_table`, `melt`), datetime conversion, missing values handling, correlation analysis, data visualization with Matplotlib and Seaborn (bar charts, boxplots, heatmaps, line charts, scatter plots, Pareto chart)
+Pandas (`merge`, `groupby`, `pivot_table`, `melt`), datetime conversion, missing values handling, correlation analysis, data visualization with Matplotlib and Seaborn (bar charts, boxplots, heatmaps, line charts, scatter plots)
 
 ## Key findings
 
